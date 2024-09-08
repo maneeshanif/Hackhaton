@@ -6,17 +6,17 @@
 }
 html,
 body {
-  height: 100%;
   width: 100%;
   font-family: "Space Mono", monospace;
   background-color: #ffffff;
   border: 1rem solid #f26b38;
 }
 .main {
-  height: 200px;
+  min-height: 200px;
+  padding :20px;
   width: 60%;
   border-radius: 13px;
-  margin: 5% 0 0% 20%;
+  margin: 2% 0 2% 20%;
   border: 2px dotted rgb(184, 183, 183);
 }
 .about {
@@ -73,8 +73,13 @@ p {
   color: #f26b38;
   display: inline;
 }
+strong{
+  color: #f26b38;
+}
 
-
+ol{
+ margin-left: 33%;
+}
 
 .skills {
   display: flex;
@@ -161,10 +166,32 @@ p {
     border-radius: 2rem;
   }
 
-  .display{
-   display: none;
+ #show-skill,#show-education,#show-experience{
+  text-align: center;
+  font-weight: 200;
+  color:#ede574;
+  height: 2rem;
+  width: 5rem;
+  background-color: #f26b38;
+  border: none;
+ }
+
+ 
+  .skill-parent,
+  .education-parent,
+  .experience-parent {
+    display: none;
+  }
+  
+  .display {
+    display: block; 
+  }
+  
+  .skill-parent {
+    margin-left: 33%;
+
   }
 
-  /* .skil-parent{
-    display: none;
-  } */
+  .experiance-container{
+    margin-left: 33%;
+  }

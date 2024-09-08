@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image/man.png" type="image/png" sizes="24x24" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Resume Builder by m.anees</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main">
-        <!-- about section -->
+      <!-- about section -->
       <div class="about">
         <h1>About Information</h1>
         <div class="profile-pic"></div>
@@ -28,77 +30,96 @@
 
           <div class="bio-data">
             <div class="col-1">
-              <span id="age">Age:</span> <span>kamane ki umar</span><br />
-              <span id="age">Address:</span> <span>duniya main</span>
+              <span id="age">Full name:</span> <span>Mohummad Anees</span><br />
+              <span id="age">Address:</span> <span>karachi,Pakistan</span>
             </div>
             <div class="col-2">
-              <span id="age">Residence:</span> <span>Pakistan</span><br />
-              <span id="age">phone:</span> <span>044443000222</span>
+              <span id="age">Age:</span> <span>21</span><br />
+              <span id="age">phone:</span> <span>03012177654</span>
             </div>
             <div class="col-3">
               <span id="age">Freelence:</span> <span>Available</span><br />
-              <span id="age">E-mail:</span> <span>Champo7707@gmail.com</span>
+              <span id="age">E-mail:</span> <span>manees7865@gmail.com</span>
             </div>
           </div>
         </div>
       </div>
       <!-- Education -->
-       <section class="education">
-           <h1>Education</h1>
-           <ul class="education-list">
-            <li>
-              <strong>Degree:</strong> Matriculation
-              <p><strong>Institution:</strong> Dars gah-e khursheed sec schl</p>
-              <p><strong>Years:</strong> 2007 - 2021</p>
-            </li>
-            <li>
-              <strong>Degree:</strong> intermediate 
-              <p><strong>Institution:</strong> Arg gov college razakabad</p>
-              <p><strong>Years:</strong> 2021 - 2023</p>
-              <strong>Degree:</strong> IT Course
-              <p><strong>Institution:</strong> Governor House (GIAIC)</p>
-              <p><strong>Years:</strong> 2024 - present </p>
-            </li>
-          </ul>
-
-       </section>
-       <!-- skiils -->
-       <section class="skills">
-        <h1 id="skill-heading">Skills</h1>
-         <div class="skil-parent">
-           <div class="first">
+      <div class="education">
+        <h1>Education</h1>
+        <button id="show-education">See Education</button>
+        <div class="education-parent">
+        <ol class="education-list">
+          <li>
+            <strong>Degree:</strong> Matriculation
+            <p><strong>Institution:</strong> Dars gah-e khursheed sec schl</p>
+            <p><strong>Years:</strong> 2007 - 2021</p>
+          </li>
+          <li>
+            <strong>Degree:</strong> Intermediate
+            <p><strong>Institution:</strong> Arg gov college razakabad</p>
+            <p><strong>Years:</strong> 2021 - 2023</p>
+          </li>
+          <li>
+            <strong>Degree:</strong> IT Course
+            <p><strong>Institution:</strong> Governor House (GIAIC)</p>
+            <p><strong>Years:</strong> 2024 - present</p>
+          </li>
+        </ol>
+      </div>
+      </section>
+      <!-- skiils -->
+      <section class="skills">
+        <h1>Skills</h1>
+        <button id="show-skill">See Skills</button>
+        <div class="skill-parent">
+          <div class="first">
             <div class="name-and-percentage1">
-                <p>Html</p>
-                <p>70%</p>
+              <p>Html</p>
+              <p>70%</p>
             </div>
             <div class="prograss1"></div>
-           </div>
-           <div class="second"></div>
-            <div class="name-and-percentage2">
-                <p>CSS</p>
-                <p>75%</p>
-            </div>
-            <div class="prograss2"></div>
-           
-           <div class="third"></div>
-            <div class="name-and-percentage3">
-                <p>ts</p>
-                <p>85%</p>
-            </div>
-            <div class="prograss3"></div>
-           
-           <div class="fourth"></div>
-            <div class="name-and-percentage4">
-                <p>C lAng</p>
-                <p>80%</p>
-            </div>
-            <div class="prograss4"></div>
+          </div>
+          <div class="second"></div>
+          <div class="name-and-percentage2">
+            <p>CSS</p>
+            <p>75%</p>
+          </div>
+          <div class="prograss2"></div>
+
+          <div class="third"></div>
+          <div class="name-and-percentage3">
+            <p>Typescript</p>
+            <p>85%</p>
+          </div>
+          <div class="prograss3"></div>
+
+          <div class="fourth"></div>
+          <div class="name-and-percentage4">
+            <p>C lAng</p>
+            <p>80%</p>
+          </div>
+          <div class="prograss4"></div>
         </div>
-        </div>
+      </section>
+
+      <!-- experiance -->
+      <div class="experiance">
+        <h1>Experiance</h1>
+        <button id="show-experience">See Experience</button>
+  <div class="experience-parent">
+        <div class="experiance-container">
+        <ul>
+        <li><strong>1.5 Year Experiance in Programming</strong><br>
+         <p> Programming Languages: C Language,Js and Ts</p>
+        </li>
+      </ul>
     </div>
-</div>
-          </section>
+  </div>
+      </div>
+
     </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
