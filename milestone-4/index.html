@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../milestone1-2/image/man.png" type="image/png" sizes="24x24" />
+
+  <title>Editable Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="form-style.css">
+  <link rel="stylesheet" href="./resume-style.css">
+</head>
+<body>
+  <div class="main">
+    <h1>Dynamic Resume Builder</h1>
+    <form id="resume-form">
+      <!-- Personal Information -->
+      <h2>Personal Information</h2>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" class="editable" required />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" class="editable" required />
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" class="editable" required />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" class="editable" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email"  class="editable" required />
+
+      <label for="brief">Short Personal Brief:</label>
+      <textarea id="brief" rows="3" class="editable" required></textarea>
+
+      <!-- Profile Picture -->
+      <label for="profile-pic">Profile Picture:</label>
+      <input type="file" id="profile-pic" accept="image/*" class="editable" />
+
+      <!-- Education Section -->
+      <h2>Education</h2>
+      <div id="education-section" class="editable">
+        <div class="education-item">
+          <label for="degree">Degree:</label>
+          <input type="text" class="degree" required />
+
+          <label for="institution">Institution:</label>
+          <input type="text" class="institution" required />
+
+          <label for="years">Years:</label>
+          <input type="text" class="years" required />
+        </div>
+      </div>
+      <button type="button" id="add-education">Add More Education</button>
+
+      <!-- Skills Section -->
+      <h2>Skills</h2>
+      <div id="skills-section" class="editable">
+        <div class="skill-item">
+          <label for="skill">Skill :</label>
+          <input type="text" class="skill" required />
+
+          <label for="skill-percentage">Skill  Percentage:</label>
+          <input type="number" class="skill-percentage" required />
+        </div>
+      </div>
+      <button type="button" id="add-skill">Add More Skills</button>
+
+<h2>Work Experience</h2>
+<div id="experience-section" class="editable">
+  <div class="experience-group">
+    <label for="experience-1">Company Name:</label>
+    <input type="text" id="experience-1" class="experience-input" required />
+    
+    <label for="brief-1">Position:</label>
+    <textarea id="brief-1" rows="3" class="brief-input" required></textarea>
+  </div>
+</div>
+
+<button type="button" id="add-experience">Add More Experience</button>
+
+
+      <button type="submit" class="sbt-btn">Generate Resume</button>
+    </form>
+    <div id="generated-resume"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
