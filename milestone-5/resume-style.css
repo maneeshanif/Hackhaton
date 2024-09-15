@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+  }
+  html,
+  body {
+    width: 100%;
+    font-family: "Space Mono", monospace;
+    border: 1rem solid #f26b38;
+  }
+  .main {
+    min-height: 200px;
+    padding: 20px;
+    width: 60%;
+    background-color: white;
+    border-radius: 13px;
+    margin: 2% 0 2% 20%;
+    border: 2px dotted rgb(249, 181, 181);
+  }
+  .about {
+    position: relative;
+    background-color: white;
+  }
+  .profile-pic {
+    height: 100px;
+    margin-left: 50px;
+    width: 100px;
+    background-color: #464242;
+    border-radius: 50%;
+    background-image: url("./image/profile.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+  }
+  h1 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 100;
+    text-decoration: underline 3px #ede574;
+    margin: 20px;
+  }
+  
+  .abt-intro {
+    top: 30px;
+    position: absolute;
+    width: 70%;
+    right: 0;
+    flex-wrap: wrap;
+  }
+  
+  p {
+    font-weight: lighter;
+    color: #6b7280;
+  }
+  
+  .bio-data {
+    position: absolute;
+    background-color: #ede574;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    right: 2px;
+  }
+  
+  
+  #orange {
+    color: #f26b38;
+    display: inline;
+  }
+  #age {
+    color: #f26b38;
+    display: inline;
+  }
+  strong {
+    color: #f26b38;
+  }
+  
+  ol {
+    margin-left: 33%;
+  }
+  
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name-and-percentage {
+    max-width: 200px;
+    background-color: #ede574;
+  }
+  
+  .prograss {
+    width: 188px;
+    height: 10px;
+    background-color: #f26b38;
+    border-radius: 2rem;
+  }
+  
+  .skill-parent {
+    margin-left: 33%;
+  }
+  
+  .education-list li {
+    list-style: disc;
+    list-style-type: orange;
+  }
+  
+  .sbt-btn {
+    margin-left: 22%;
+  }
+  
+  .experience li {
+    margin-left: 33%;
+    border-left: 4px solid #f26b38;
+  }
+  
