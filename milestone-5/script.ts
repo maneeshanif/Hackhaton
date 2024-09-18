@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Display and copy the shareable link immediately after generation
       const username = name.trim().replace(/\s+/g, "-").toLowerCase();
-      const resumeUrl = `https://hackhaton-5-lytrw8qti-mohummadanees-projects.vercel.app/${username}`;
+      const resumeUrl = `https://hackhaton-5.vercel.app/${username}`;
 
       const shareLinkButton = document.querySelector("#share-link");
       shareLinkButton?.addEventListener("click", () => {

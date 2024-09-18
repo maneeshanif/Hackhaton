@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
             showEditButton();
             // Display and copy the shareable link immediately after generation
             var username = name.trim().replace(/\s+/g, "-").toLowerCase();
-            var resumeUrl = "https://hackhaton-5-lytrw8qti-mohummadanees-projects.vercel.app/".concat(username);
+            var resumeUrl = "https://hackhaton-5.vercel.app/".concat(username);
             var shareLinkButton = document.querySelector("#share-link");
             shareLinkButton === null || shareLinkButton === void 0 ? void 0 : shareLinkButton.addEventListener("click", function () {
                 copyLinkToClipboard(resumeUrl);
