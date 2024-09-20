@@ -171,7 +171,14 @@ document.addEventListener("DOMContentLoaded", () => {
         <button type="button" id="share-link">Copy Url Link</button>
         <button type="button" id="download-pdf">Download PDF</button>
       `;
-
+      
+      document.getElementById('download-pdf')?.addEventListener('click', () => {
+        // const resume = document.getElementById('resume-form'); // Get the resume element
+  
+      
+          window.print();
+        
+      });
       // Show Edit Button
       showEditButton();
 

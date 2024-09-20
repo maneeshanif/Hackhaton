@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Read Profile Picture as Data URL
         var reader = new FileReader();
         reader.onload = function () {
+            var _a;
             var profilePicUrl = reader.result;
             if (!mainContainer) {
                 console.error("Main container not found.");
@@ -71,6 +72,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             // Generate Resume
             mainContainer.innerHTML = "\n        <div class=\"about editable\">\n          <h1>About Information</h1>\n          <div class=\"profile-pic\">\n            <img src=\"".concat(profilePicUrl, "\" alt=\"Profile Picture\" />\n          </div>\n          <div class=\"abt-intro editable\">\n            <p>").concat(brief, "</p>\n            <div class=\"bio-data\">\n              <div class=\"col-1\">\n                <span id=\"orange\">Full name:</span> <span>").concat(name, "</span><br />\n                <span id=\"orange\">Address:</span> <span>").concat(address, "</span>\n              </div>\n              <div class=\"col-2\">\n                <span id=\"orange\">Age:</span> <span>").concat(age, "</span><br />\n                <span id=\"orange\">Phone:</span> <span>").concat(phone, "</span>\n              </div>\n              <div class=\"col-3\">\n                <span id=\"orange\">Freelance:</span> <span>Available</span><br />\n                <span id=\"orange\">Email:</span> <span>").concat(email, "</span>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <section class=\"education editable\">\n          <h1>Education</h1>\n          <ol class=\"education-list\">").concat(educationHtml, "</ol>\n        </section>\n\n        <section class=\"skills editable\">\n          <h1>Skills</h1>\n          <div class=\"skill-parent\">").concat(skillsHtml, "</div>\n        </section>\n\n        <section class=\"experience editable\">\n          <h1>Experience</h1>\n          <ul>").concat(experienceHtml, "</ul>\n        </section>\n\n        <button type=\"button\" id=\"share-link\">Copy Url Link</button>\n        <button type=\"button\" id=\"download-pdf\">Download PDF</button>\n      ");
+            (_a = document.getElementById('download-pdf')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', function () {
+                // const resume = document.getElementById('resume-form'); // Get the resume element
+                window.print();
+            });
             // Show Edit Button
             showEditButton();
             // Display and copy the shareable link immediately after generation
